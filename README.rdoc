@@ -1,28 +1,23 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Music Concert Network Project with RoR 
 
-Things you may want to cover:
+Creatin an app to help users to find interesting concerts 
 
-* Ruby version
+Iteration #1: 
+Create the app site. 
+Users are able to add a new concert. 
+Each concert should have a page where users can see its details. 
+Validate that all concerts details follow the format. 
+Create an appropriate header and a footer for all the pages of the application. 
 
-* System dependencies
+Iteration #2: 
+In the front page we will be able to see what is happening today. 
+In a sidebar should appear a list called "later this month" with links to all the concerts later this month. 
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Iteration #3: 
+Each concert can be commented so the visitors can say something about the concert. 
+Style the comments in boxes. 
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+
