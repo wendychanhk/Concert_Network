@@ -1,0 +1,165 @@
+<h3>Here is the list of concerts of today! </h3>
+<table>
+	<tr>
+		<th>Band</th>
+		<th>Venue</th>
+		<th>City</th>
+		<th>Price</th>
+		<th>Date</th>
+		<th>Description</th>
+
+		<th colspan="6"></th>
+	</tr>
+
+	<% if @concerts_today.present? %>
+	<% @concerts_today.each do |concert| %>
+		<tr>
+			<td>
+				<%=concert.band %>
+			</td>
+
+			<td>
+				<%=concert.venue %>
+			</td>
+
+			<td>
+				<%=concert.city %>
+			</td>
+
+			<td>
+				<%=concert.price %>
+			</td>
+
+			<td>
+				<%=concert.date %>
+			</td>
+
+			<td>
+				<%=concert.description %> 
+				<%= link_to "See details",  concert_path(concert) %>
+			</td>
+				<% end %>
+				
+		</tr>
+		<% else %>
+					**There is no concert happening today.**
+				<% end %>
+				
+</table>
+
+
+ <div id="navigation"></div>
+    <div id="container">
+      <div id="main"></div>
+      <div id="sidebar"><h2>Concerts happening later this month</h2>
+			
+		<table>
+	<tr>
+		<th>Band</th>
+		<th>Venue</th>
+		<th>City</th>
+		<th>Price</th>
+		<th>Date</th>
+		<th>Description</th>
+
+		<th colspan="6"></th>
+	</tr>
+	<% @concerts_later_this_month.each do |concert| %>
+		<tr>
+			<td>
+				<%=concert.band %>
+			</td>
+
+			<td>
+				<%=concert.venue %>
+			</td>
+
+			<td>
+				<%=concert.city %>
+			</td>
+
+			<td>
+				<%=concert.price %>
+			</td>
+
+			<td>
+				<%=concert.date %>
+			</td>
+
+			<td>
+				<%=concert.description %>
+				<%= link_to "See details",  concert_path(concert) %>
+			</td>
+		</tr>
+
+
+
+
+
+	<% end %>
+</table>
+
+
+
+
+
+</div>
+    </div>
+
+     <div id="navigation"></div>
+    <div id="container">
+      <div id="main"></div>
+      <div id="sidebar"><h2>Concerts happening after this month</h2>
+			
+			<table>
+	<tr>
+		<th>Band</th>
+		<th>Venue</th>
+		<th>City</th>
+		<th>Price</th>
+		<th>Date</th>
+		<th>Description</th>
+
+		<th colspan="6"></th>
+	</tr>
+	<% @concerts_after_this_month.each do |concert| %>
+		<tr>
+			<td>
+				<%=concert.band %>
+			</td>
+
+			<td>
+				<%=concert.venue %>
+			</td>
+
+			<td>
+				<%=concert.city %>
+			</td>
+
+			<td>
+				<%=concert.price %>
+			</td>
+
+			<td>
+				<%=concert.date %>
+			</td>
+
+			<td>
+				<%=concert.description %>
+				<%= link_to "See details",  concert_path(concert) %>
+			</td>
+		</tr>
+		
+	<% end %>
+</table>
+
+
+
+</div>
+    </div>
+
+
+
+
+
+

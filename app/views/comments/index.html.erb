@@ -1,0 +1,35 @@
+<h1>Comments of concert</h1>
+
+<table>
+	<tr>
+		<th>User name</th>
+		<th>Comment</th>
+		<th colspan="2"></th>
+	</tr>
+	<% @comments.each do |c| %>
+		<tr>
+			<td><%= c.user_name %></td>
+
+			<td>
+				 <div class="dialogbox">
+    <div class="body">
+      <span class="tip tip-left"></span>
+      <div class="message">
+        <span><%= c.comment %></span>
+      </div>
+    </div>
+  </div>
+			</td>
+		</tr>
+	<% end %>
+</table>
+<br/>
+
+
+
+<%= link_to "Back to List of all concerts", concerts_path%>
+
+
+
+  
+ 

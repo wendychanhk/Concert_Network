@@ -1,0 +1,37 @@
+<h1>Add a concert here! </h1>
+
+
+<%= form_for @concert do |f|%>
+	<div class="band-container">
+		<%= f.label :band %>
+		<%= f.text_field :band %>
+	</div>
+	<div class="venue-container">
+		<%= f.label :venue%>
+		<%= f.text_field :venue %>
+	</div>
+	<div class="city-container">
+		<%= f.label :city %>
+		<%= f.text_field :city%>
+	</div>
+	<div class="date-container">
+		<%= f.label :date%>
+		<%= f.date_field :date%>
+	</div>
+	<div class="price-container">
+		<%= f.label :price%>
+		<%= f.text_field :price %>
+	</div>
+
+	<div class="description-container">
+		<%= f.label :description %>
+		<%= f.text_field :description %>
+	</div>
+
+	<%= f.submit "Submit" %>
+
+<%end%>
+
+
+<%= link_to "Back to concert list", concerts_path %>
+

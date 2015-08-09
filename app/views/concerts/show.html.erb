@@ -1,0 +1,40 @@
+<h3>Here is the detail of the concert! </h3>
+<table>
+	<tr>
+		<th>Band</th>
+		<th>Venue</th>
+		<th>City</th>
+		<th>Price</th>
+		<th>Date</th>
+		<th>Description</th>
+
+		<th colspan="6"></th>
+	</tr>
+		<tr>
+			<td>
+				<%=@concert.band %>
+			</td>
+
+			<td>
+				<%=@concert.venue %>
+			</td>
+
+			<td>
+				<%=@concert.city %>
+			</td>
+
+			<td>
+				<%=@concert.price %>
+			</td>
+
+			<td>
+				<%=@concert.date %>
+			</td>
+
+			<td>
+				<%=@concert.description %>
+			</td>
+		</tr>
+</table>
+
+<%= link_to "Add comment", new_concert_comment_path(@concert) %>
