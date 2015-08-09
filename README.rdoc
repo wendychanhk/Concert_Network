@@ -1,6 +1,4 @@
-== README
-
-Music Concert Network Project with RoR 
+== Music Concert Network Project with RoR 
 
 Creatin an app to help users to find interesting concerts 
 
